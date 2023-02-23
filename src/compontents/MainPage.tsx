@@ -41,6 +41,7 @@ const MainPage = () => {
                 imgUrl={news.imageUrl}
                 summary={news.summary}
                 id={news.id}
+                key={"SingleNewsKey " + news.id}
               />
             </Col>
           );

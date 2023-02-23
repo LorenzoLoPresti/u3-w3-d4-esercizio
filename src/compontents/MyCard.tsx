@@ -6,6 +6,7 @@ interface MyCardProps {
   imgUrl: string;
   summary: string;
   id: number;
+  key: string;
 }
 
 const MyCard = (props: MyCardProps) => {
