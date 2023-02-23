@@ -35,13 +35,12 @@ const MainPage = () => {
       <Row>
         {newsList?.map((news) => {
           return (
-            <Col xs={6}>
+            <Col xs={12} md={6} key={"SingleNewsKey " + news.id}>
               <MyCard
                 title={news.title}
                 imgUrl={news.imageUrl}
                 summary={news.summary}
                 id={news.id}
-                key={"SingleNewsKey " + news.id}
               />
             </Col>
           );

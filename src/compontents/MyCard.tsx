@@ -6,11 +6,9 @@ interface MyCardProps {
   imgUrl: string;
   summary: string;
   id: number;
-  key: string;
 }
 
 const MyCard = (props: MyCardProps) => {
-  console.log(props);
   return (
     <Card className="mb-5">
       <Card.Img variant="top" src={props.imgUrl} style={{ height: "400px" }} />

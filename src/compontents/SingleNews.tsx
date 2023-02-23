@@ -25,6 +25,7 @@ const SingleNews = () => {
   useEffect(() => {
     singleNewsFetch();
     console.log(singleNews && singleNews);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
